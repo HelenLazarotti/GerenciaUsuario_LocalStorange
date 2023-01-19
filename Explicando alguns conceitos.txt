@@ -1,0 +1,66 @@
+//Função -> executa um bloco de código e retorna algum valor
+
+//return -> retorna um valor e encerra a função
+
+//SPA -> Single Page Application / Aplicação de página única. Ex: Gmail, Netflix
+
+//this -> se refere ao elemento que está passando neste momento no forEach.
+
+//ANTES:
+let name = document.querySelector('#exampleInputName');
+
+let gender = document.querySelectorAll('#form-user-create [name = gender] _ checked');//pega dentro do fomulário todas as tags que possuem o name gender e que estaja clicada
+
+let born = document.querySelector('#exampleInputBirth');
+
+let country = document.querySelector('#exampleInputCountry');
+
+let email = document.querySelector('#exampleInputEmail');
+
+let password = document.querySelector('#exampleInputPassword');
+
+let file = document.querySelector('#exampleInputFile');
+
+let admin = document.querySelector('#exampleInputAdmin')
+let btnSave = document.querySelector('.btn-success')
+
+//ao invés de fazer todas essas variáveis, pegando cada campo de input , posso usar o forEach, pegando all tags que contem dentro dela, e possuem atributo name, assim percorro todo meu form...
+
+let fields = document.querySelectorAll('#form-user-create [name]')
+
+//DEPOIS:
+fields.forEach(function (field, index) {
+
+
+
+
+//Toda classe começa com letra maiúscula
+
+//Métodos -> Ações que serão executadas.
+
+//No construtor como parâmetro, coloco os dados que eu vou receber desee cliente.
+
+//Preciso guardar cada um desses campos que vou receber do contrutor, dentro do meu objeto.
+
+//Método Construtor -> método chamado automáticamente quando invocamos a classe.
+
+//Cada objeto vai ser um usuário diferente.
+
+//Toda vez que criamos uma variável dentro de uma classe, dizemos que ela vai virar um atributo/propriedade desse objeto.
+
+//Um Objeto é uma variável que instância uma classe.
+
+/*MVC
+- Model -> onde guardo as informações, armazenamento dos dados
+- View -> interface que o usuário interage
+- Controller -> controla/liga o MV, são as regras de negócio, ele acessa o model pra pegar/guardar as infos e as processa pra mostrar na View.
+- */
+
+
+//OBS: quando ele der erro que ñ encontrou alguma coisa/var, trocamos por arrow function => {}
+
+//DataSet -> API web que permite leitura e escrita em elementos com data-, no HTML eu coloco, dai no JS, que consigo recuperar essa info.
+
+//Serialização -> transforma objeto em texto.
+
+//For In -> laço p percorrer objetos.
